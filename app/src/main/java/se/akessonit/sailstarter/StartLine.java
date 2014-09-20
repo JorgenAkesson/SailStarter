@@ -136,6 +136,8 @@ public class StartLine extends Activity implements LocationListener {
         double VinkelV1Radianer = Math.acos((dP1TillBåt*dP1TillBåt+dBojar*dBojar-dP2TillBåt*dP2TillBåt)/(2*dP1TillBåt*dBojar));
         double h = dP1TillBåt * Math.sin(VinkelV1Radianer);
 
+        h = Math.round(h * 10000.0) / 10.0;
+
         return h;
     }
     private double deg2rad(double deg) {
