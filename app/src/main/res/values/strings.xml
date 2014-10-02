@@ -5,6 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="startLine">Start linje</string>
+    <string name="starter">Starter</string>
     <string name="title_activity_start_line">StartLine</string>
+    <string name="title_activity_startPage">Sailstarter</string>
+    <string name="test">Test</string>
 
 </resources>

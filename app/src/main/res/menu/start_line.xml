@@ -1,8 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="se.akessonit.sailstarter.StartLine" >
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+    <item android:id="@+id/starter"
+        android:title="@string/starter"
         android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/test"
+        android:title="@string/test"
+        android:orderInCategory="90"
         android:showAsAction="never" />
 </menu>
