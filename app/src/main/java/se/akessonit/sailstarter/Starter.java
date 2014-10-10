@@ -7,17 +7,20 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.location.LocationManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.text.format.Time;
 import android.view.Display;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
@@ -50,8 +53,6 @@ public class Starter extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-        WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_starter);
 
         SharedPreferences settings = getSharedPreferences("PREFS_NAME", 0);
@@ -74,18 +75,21 @@ public class Starter extends Activity {
         numberPickerHour.setMinValue(0);
         numberPickerHour.setValue(hour);
         numberPickerHour.setWrapSelectorWheel(true);
+        numberPickerHour.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
 
         numberPickerMin = (NumberPicker) findViewById(R.id.numberpickerMin);
         numberPickerMin.setMaxValue(59);
         numberPickerMin.setMinValue(0);
         numberPickerMin.setValue(min);
         numberPickerMin.setWrapSelectorWheel(true);
+        numberPickerMin.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
 
         numberPickerSec = (NumberPicker) findViewById(R.id.numberpickerSec);
         numberPickerSec.setMaxValue(59);
         numberPickerSec.setMinValue(0);
         numberPickerSec.setValue(sec);
         numberPickerSec.setWrapSelectorWheel(true);
+        numberPickerSec.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -119,6 +123,12 @@ public class Starter extends Activity {
         // public void schedule (TimerTask task, long delay, long period)
         t.schedule(mTimerTask, 0, 1000);  //
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        int a = numberPickerHour.getValue();
+     }
 
     public void SetTime() {
         int startHour = numberPickerHour.getValue();
@@ -157,7 +167,7 @@ public class Starter extends Activity {
                 cal.add(Calendar.HOUR, -cal2.get(Calendar.HOUR_OF_DAY));
                 cal.add(Calendar.MINUTE, -cal2.get(Calendar.MINUTE));
                 cal.add(Calendar.SECOND, -cal2.get(Calendar.SECOND));
-                hTextView.setTextColor(Color.BLACK);
+                hTextView.setTextColor(Color.WHITE);
             }
             hTextView.setText(formatter.format(cal.getTime()));
         } catch (ParseException e) {
@@ -191,16 +201,11 @@ public class Starter extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.startLine) {
-            Intent startLinePage = new Intent(this, StartLine.class);
-            startActivity(startLinePage);
-            return true;
-        }
-        if (id == R.id.test) {
-            Intent testPage = new Intent(this, StartPage.class);
-            startActivity(testPage);
-            return true;
-        }
+        //if (id == R.id.startLine) {
+        //    Intent startLinePage = new Intent(this, StartLine.class);
+        //    startActivity(startLinePage);
+        //    return true;
+        //}
         return super.onOptionsItemSelected(item);
     }
 }

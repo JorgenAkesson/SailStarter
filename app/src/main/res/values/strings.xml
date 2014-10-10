@@ -3,11 +3,21 @@
 
     <string name="app_name">SailStarter</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Inställningar</string>
     <string name="startLine">Start linje</string>
     <string name="starter">Starter</string>
-    <string name="title_activity_start_line">StartLine</string>
+    <string name="title_activity_start_line">StartLinje</string>
     <string name="title_activity_startPage">Sailstarter</string>
     <string name="test">Test</string>
+    <string name="settings">Inställningar</string>
+    <string name="startBuoy">Visa/dölj start bojar.</string>
+    <string name="distanceToStartLineInCource">Avstånd till startlinjen i kurs</string>
+    <string name="distanceToStartLine">Avstånd till startlinjen</string>
+    <string name="timeToStartLine">Tid till startlinjen i kurs</string>
+    <string name="cource">Kurs</string>
+    <string name="angelToStartLine">Vinkel mot startlinjen</string>
+    <string name="speed">Fart</string>
+    <string name="bouyLee">Lä boj</string>
+    <string name="bouyWindward">Lovart boj</string>
 
 </resources>

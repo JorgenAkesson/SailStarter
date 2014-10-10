@@ -2,11 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="se.akessonit.sailstarter.StartPage" >
     <item android:id="@+id/startLine"
-        android:title="@string/startLine"
+        android:title="@string/settings"
         android:orderInCategory="100"
-        android:showAsAction="never" />
-    <item android:id="@+id/starter"
-        android:title="@string/starter"
-        android:orderInCategory="90"
         android:showAsAction="never" />
 </menu>

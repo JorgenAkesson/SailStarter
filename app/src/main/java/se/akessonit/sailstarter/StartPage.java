@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 
 public class StartPage extends Activity {
@@ -13,6 +14,7 @@ public class StartPage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_start_page);
     }
 
@@ -45,10 +47,7 @@ public class StartPage extends Activity {
         if (id == R.id.startLine) {
             Intent startLinePage = new Intent(this, StartLine.class);
             startActivity(startLinePage);
-        }
-        if (id == R.id.starter) {
-            Intent startPage = new Intent(this, Starter.class);
-            startActivity(startPage);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
