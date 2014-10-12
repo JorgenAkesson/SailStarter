@@ -172,7 +172,7 @@ public class StartLine extends Activity implements LocationListener {
             double distToLineInCource = DistanceToStartLineInCource(presentLocation.course, dist);
             double timeToStartLine = Math.abs(TimeToStartLine(distToLineInCource, presentLocation.speed));
 
-            distanceToStartLineTextView.setText(String.valueOf(Math.round(dist * 10000.0) / 10.0));
+            distanceToStartLineTextView.setText(String.valueOf(Math.round(dist * 10.0) / 10.0));
 
             if (dist >= DistanceToLineOld) // Going away
             {
@@ -265,7 +265,7 @@ public class StartLine extends Activity implements LocationListener {
         // Vinkel v1 (radianer) = ACOS((M18*M18+M5*M5-M20*M20)/(2*M18*M5))
         double VinkelV1Radianer = Math.acos((dP1TillBåt*dP1TillBåt+dBojar*dBojar-dP2TillBåt*dP2TillBåt)/(2*dP1TillBåt*dBojar));
         double h = dP1TillBåt * Math.sin(VinkelV1Radianer);
-        return h;
+        return h * 1000;
     }
 
     private double deg2rad(double deg) {
