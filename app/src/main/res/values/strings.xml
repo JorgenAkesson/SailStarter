@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">SailStarter</string>
+    <string name="app_name">ProSail</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Inställningar</string>
-    <string name="startLine">Start linje</string>
-    <string name="starter">Starter</string>
-    <string name="title_activity_start_line">StartLinje</string>
-    <string name="title_activity_startPage">Sailstarter</string>
+    <string name="action_settings">Settings</string>
+    <string name="startLine">Start line</string>
+    <string name="starter">Start time</string>
+    <string name="title_activity_start_line">Start line</string>
+    <string name="title_activity_startPage">ProSail</string>
     <string name="test">Test</string>
-    <string name="settings">Inställningar</string>
-    <string name="startBuoy">Visa/dölj start bojar.</string>
-    <string name="distanceToStartLineInCource">Avstånd till startlinjen i kurs</string>
-    <string name="distanceToStartLine">Avstånd till startlinjen</string>
-    <string name="timeToStartLine">Tid till startlinjen i kurs</string>
-    <string name="cource">Kurs</string>
-    <string name="angelToStartLine">Vinkel mot startlinjen</string>
-    <string name="speed">Fart</string>
-    <string name="bouyLee">Lä boj</string>
-    <string name="bouyWindward">Lovart boj</string>
-
+    <string name="settings">Settings</string>
+    <string name="manual">Manual</string>
+    <string name="startBuoy">Show/hide start buoys</string>
+    <string name="distanceToStartLineInCource">Distance to start line in course</string>
+    <string name="distanceToStartLine">Distance to start line</string>
+    <string name="timeToStartLine">Time to start line in course</string>
+    <string name="cource">Course</string>
+    <string name="angelToStartLine">Angel to start line</string>
+    <string name="speed">Speed</string>
+    <string name="bouyLee">Lee buoy</string>
+    <string name="bouyWindward">Ww buoy</string>
 </resources>

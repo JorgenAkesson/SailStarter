@@ -18,9 +18,8 @@
             android:id="@+id/startBuoyLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
+            android:layout_marginBottom="6mm"
             android:orientation="horizontal">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,11 +27,10 @@
                 android:orientation="vertical">
 
                 <Button
+                    style="@style/StartLineButton"
                     android:id="@+id/pos1button"
-                    style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
                     android:onClick="pos1buttonClick"
                     android:text="@string/bouyLee" />
 
@@ -82,7 +80,6 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -90,8 +87,8 @@
                 android:orientation="vertical">
 
                 <Button
+                    style="@style/StartLineButton"
                     android:id="@+id/pos2button"
-                    style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
@@ -145,108 +142,102 @@
         </LinearLayout>
 
         <TextView
+            style="@style/StartLineText"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/distanceToStartLine"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="@string/distanceToStartLine" />
 
         <TextView
+            style="@style/StartLineValues"
             android:id="@+id/distanceToStartLineTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
+            android:text="" />
 
 
         <TextView
+            style="@style/StartLineText"
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/angelToStartLine"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="@string/angelToStartLine" />
 
         <TextView
+            style="@style/StartLineValues"
             android:id="@+id/angelTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
+            style="@style/StartLineText"
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/timeToStartLine"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="@string/timeToStartLine" />
 
         <TextView
+            style="@style/StartLineValues"
             android:id="@+id/timeToStartLineTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
+            android:layout_height="wrap_content"/>
 
         <TextView
+            style="@style/StartLineText"
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/distanceToStartLineInCource"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:text="@string/distanceToStartLineInCource" />
 
         <TextView
+            style="@style/StartLineValues"
             android:id="@+id/distToStartLineInCourceTextView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
+            android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/speedLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2mm"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cource"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/StartLineText"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cource"/>
 
-        <TextView
-            android:id="@+id/courseTextView"
-            android:layout_width="wrap_content"
+            <TextView
+                style="@style/StartLineValues"
+                android:id="@+id/courseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                style="@style/StartLineText"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/speed"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            <TextView
+                style="@style/StartLineValues"
+                android:id="@+id/speedKnotsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/speedTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/speedKnotsTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="2mm"
-            android:text=""
-            android:textSize="20dp" />
     </LinearLayout>
 </RelativeLayout>
