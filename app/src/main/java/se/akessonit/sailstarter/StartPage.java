@@ -44,8 +44,13 @@ public class StartPage extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.startLine) {
-            Intent startLinePage = new Intent(this, StartLine.class);
+        if (id == R.id.startSettings) {
+            Intent startLinePage = new Intent(this, Settings.class);
+            startActivity(startLinePage);
+            return true;
+        }
+        if (id == R.id.startManual) {
+            Intent startLinePage = new Intent(this, Settings.class);
             startActivity(startLinePage);
             return true;
         }

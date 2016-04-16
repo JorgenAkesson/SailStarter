@@ -13,7 +13,8 @@
         </activity>
         <activity
             android:name=".StartLine"
-            android:label="@string/title_activity_start_line" >
+            android:label="@string/title_activity_start_line"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".StartPage"
@@ -22,6 +23,10 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/action_settings" >
         </activity>
     </application>
 

@@ -38,7 +38,6 @@ public class StartLine extends Activity implements LocationListener {
     TextView distanceToStartLineInCourceTextView;
     TextView courseTextView;
     TextView angelTextView;
-    TextView speedTextView;
     TextView speedKnotsTextView;
     double DistanceToLineOld = 0;
     Boolean ShowStartBouy = true;
@@ -73,7 +72,6 @@ public class StartLine extends Activity implements LocationListener {
         timeToStartLineTextView = (TextView) findViewById(R.id.timeToStartLineTextView);
         distanceToStartLineInCourceTextView = (TextView) findViewById(R.id.distToStartLineInCourceTextView);
         courseTextView = (TextView) findViewById(R.id.courseTextView);
-        speedTextView = (TextView) findViewById(R.id.speedTextView);
         angelTextView = (TextView) findViewById(R.id.angelTextView);
         speedKnotsTextView = (TextView) findViewById(R.id.speedKnotsTextView);
 
@@ -187,7 +185,6 @@ public class StartLine extends Activity implements LocationListener {
             }
             DistanceToLineOld = dist;
 
-            speedTextView.setText(String.valueOf(Math.round(presentLocation.speed * 10.0) / 10.0));
             speedKnotsTextView.setText(String.valueOf(Math.round(presentLocation.speed *3.6 / 1.853 * 10.0) / 10.0));
             courseTextView.setText(String.valueOf(Math.round(presentLocation.course)));
             angelTextView.setText(String.valueOf(Math.round(AngelToStartLine)));

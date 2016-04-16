@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="StartLine" parent="AppTheme">
+
+    </style>
+    <style name="StartLineButton" >
+        <item name="android:textColor" >#ffffc200</item>
+        <item name="android:textSize" >30dp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+    <style name="StartLineText" >
+        <item name="android:textColor" >#ffffcb21</item>
+        <item name="android:textSize" >18dp</item>
+        <item name="android:textStyle" >bold</item>
+    </style>
+    <style name="StartLineValues" >
+        <item name="android:textColor" >#FFFFFFFF</item>
+        <item name="android:textSize" >41dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:text" >""</item>
+        <item name="android:layout_marginBottom" >2mm</item>
+    </style>
+</resources>

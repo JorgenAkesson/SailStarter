@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProSail</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="startLine">Startlinje</string>
+    <string name="starter">Starttid</string>
+    <string name="title_activity_start_line">Startlinje</string>
+    <string name="title_activity_startPage">ProSail</string>
+    <string name="test">Test</string>
+    <string name="settings">Inställningar</string>
+    <string name="manual">Manual</string>
+    <string name="startBuoy">Visa/dölj start bojar</string>
+    <string name="distanceToStartLineInCource">Avstånd till startlinjen i kurs</string>
+    <string name="distanceToStartLine">Avstånd till startlinjen</string>
+    <string name="timeToStartLine">Tid till startlinjen i kurs</string>
+    <string name="cource">Kurs</string>
+    <string name="angelToStartLine">Vinkel mot startlinjen</string>
+    <string name="speed">Fart</string>
+    <string name="bouyLee">Läboj</string>
+    <string name="bouyWindward">Lovartboj</string>
+</resources>
